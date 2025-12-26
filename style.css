@@ -1,153 +1,35 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Georgia", serif;
-}
+* { margin:0; padding:0; box-sizing:border-box; font-family:"Georgia", serif; }
+body { background:#faf7f2; color:#2b2b2b; line-height:1.7; }
 
-body {
-  background: #faf7f2;
-  color: #2b2b2b;
-}
+header { background:#1e1e1e; position:sticky; top:0; z-index:1000; }
+.nav-container { display:flex; justify-content:space-between; align-items:center; padding:15px 25px; }
+.logo { color:#f4c97a; font-size:24px; font-weight:bold; }
+nav a { color:#fff; margin-left:20px; text-decoration:none; font-size:15px; }
+nav a:hover { color:#f4c97a; }
+.menu-btn { display:none; color:white; font-size:24px; cursor:pointer; }
 
-header {
-  background: #1e1e1e;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+.hero { height:80vh; background:linear-gradient(to bottom,#000000aa,#000000aa),#3b2f2f; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; color:#f4c97a; }
+.hero h1 { font-size:50px; margin-bottom:10px; }
+.hero p { font-size:18px; margin-bottom:20px; }
+.hero .btn { padding:12px 25px; background:#f4c97a; color:#1e1e1e; text-decoration:none; font-weight:bold; border-radius:4px; transition:0.3s; }
+.hero .btn:hover { background:#e0b759; }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 25px;
-}
+.section { padding:80px 20px; max-width:1100px; margin:auto; text-align:center; }
+.section h2 { font-size:32px; margin-bottom:20px; color:#3b2f2f; }
+.section p { font-size:16px; margin-bottom:15px; }
+.dark { background:#1e1e1e; color:#f5f5f5; }
+.dark h2 { color:#f4c97a; }
 
-.logo {
-  color: #f4c97a;
-  font-size: 24px;
-  font-weight: bold;
-}
+.menu-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; }
+.menu-category { background:#fff; padding:25px; border-radius:8px; }
+.dark .menu-category { background:#2b2b2b; }
 
-nav a {
-  color: #ffffff;
-  margin-left: 20px;
-  text-decoration: none;
-  font-size: 15px;
-}
+footer { background:#000; color:#aaa; text-align:center; padding:20px; font-size:14px; }
 
-nav a:hover {
-  color: #f4c97a;
-}
-
-.menu-btn {
-  display: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.hero {
-  height: 70vh;
-  background: linear-gradient(to bottom, #000000aa, #000000aa),
-              radial-gradient(circle, #3b2f2f, #000);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #f4c97a;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.section {
-  padding: 80px 20px;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #3b2f2f;
-}
-
-.section p {
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.dark {
-  background: #1e1e1e;
-  color: #f5f5f5;
-}
-
-.dark h2 {
-  color: #f4c97a;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
-.dark .card {
-  background: #2b2b2b;
-}
-
-.list {
-  list-style: none;
-  font-size: 16px;
-}
-
-.list li {
-  margin: 10px 0;
-}
-
-footer {
-  background: #000;
-  color: #aaa;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    background: #1e1e1e;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-  }
-
-  nav a {
-    padding: 15px;
-    border-top: 1px solid #333;
-  }
-
-  nav.show {
-    display: flex;
-  }
-
-  .menu-btn {
-    display: block;
-  }
+/* Mobile */
+@media(max-width:768px){
+  nav { display:none; flex-direction:column; background:#1e1e1e; position:absolute; top:60px; right:0; width:200px; }
+  nav.show { display:flex; }
+  nav a { padding:15px; border-top:1px solid #333; margin-left:0; }
+  .menu-btn { display:block; }
 }
