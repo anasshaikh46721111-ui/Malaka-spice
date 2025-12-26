@@ -1,95 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Malaka Spice Pune - Inspired Southeast Asian Cuisine</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malaka Spice | Inspired Southeast Asian Cuisine</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Header / Navigation -->
 <header>
- <nav>
-  <div class="logo">Malaka Spice</div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#story">Our Story</a></li>
-    <li><a href="#farm">Farm to Table</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#events">Events</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="hamburger"><span></span><span></span><span></span></div>
- </nav>
+  <div class="nav-container">
+    <div class="logo">Malaka Spice</div>
+    <nav id="nav">
+      <a href="#about">About</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#menu">Menu</a>
+      <a href="#events">Events</a>
+      <a href="#locations">Locations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </div>
 </header>
 
-<main>
-
-<!-- Hero -->
 <section class="hero">
-  <h1>Malaka Spice</h1>
-  <p>Inspired Southeast Asian Cuisine</p>
-  <p>Visit us in Pune – Koregaon Park & Kharadi</p>
+  <h1>Inspired Southeast Asian Cuisine</h1>
+  <p>Since 1997 • Pune</p>
 </section>
 
-<!-- About -->
-<section id="about">
+<section id="about" class="section">
   <h2>About Malaka Spice</h2>
-  <p>Founded in 1997 by Praful & Cheeru Chandawarkar, Malaka Spice is a celebrated Southeast Asian restaurant blending global flavors with innovation, community, and culture. Every dish tells a story of passion and exploration across Malaysia, Thailand, Singapore and beyond.</p>
+  <p>
+    Founded in 1997 by Praful and Cheeru Chandawarkar, Malaka Spice is a pioneer of
+    Southeast Asian cuisine in India. What began as a small restaurant in Koregaon Park
+    evolved into a culinary institution rooted in culture, travel, and storytelling.
+  </p>
 </section>
 
-<!-- Our Story -->
-<section id="story">
-  <h2>Our Story</h2>
-  <p>Food at Malaka Spice is crafted from extensive culinary tours across Southeast Asia, bringing the finest ingredients, spices, and techniques to every plate.</p>
-  <p>Farm-to-table philosophy with seasonal menus refreshed quarterly.</p>
+<section id="philosophy" class="section dark">
+  <h2>Our Philosophy</h2>
+  <p>
+    Every Malaka Spice dish reflects journeys across Malaysia, Thailand, Indonesia,
+    Singapore, Vietnam, Cambodia, and Japan. We follow a farm-to-table approach with
+    seasonal menus updated quarterly and responsibly sourced ingredients.
+  </p>
 </section>
 
-<!-- Farm to Table -->
-<section id="farm">
-  <h2>Farm to Table</h2>
-  <p>Malaka Spice sources fresh produce from Cherish Farms — a 4-acre initiative focused on sustainable, pesticide-free ingredients — enhancing both flavor and environmental impact.</p>
+<section id="menu" class="section">
+  <h2>Signature Offerings</h2>
+  <div class="grid">
+    <div class="card">Laksa & Southeast Asian Curries</div>
+    <div class="card">Small Plates & Dim Sum</div>
+    <div class="card">Wok Tossed Noodles & Rice</div>
+    <div class="card">Farm-to-Bar Cocktails</div>
+  </div>
 </section>
 
-<!-- Gallery -->
-<section id="gallery">
-  <h2>Art & Ambience</h2>
-  <p>Inside Malaka Spice, experience the Art Gallery showcasing rotating works from painters, sculptors, and mixed media creators.</p>
-</section>
-
-<!-- Events -->
-<section id="events">
-  <h2>Events</h2>
-  <ul>
-    <li>Wine Fest</li>
+<section id="events" class="section dark">
+  <h2>Events & Experiences</h2>
+  <ul class="list">
+    <li>Wine Festivals</li>
     <li>Malaka Taste Panels</li>
-    <li>Malaka Night Market</li>
-    <li>Seasonal Experiences & Community Events</li>
+    <li>Night Markets</li>
+    <li>Seasonal Cultural Events</li>
   </ul>
 </section>
 
-<!-- Team -->
-<section id="team">
-  <h2>Team Behind Malaka Spice</h2>
-  <p>Leadership & culinary experts including Founder Praful Chandawarkar, CEO Shrijit Ravindran, Marketing Head Anuja Bhondwe and Executive Chefs leading inspired cuisine.</p>
+<section id="locations" class="section">
+  <h2>Our Locations</h2>
+  <p><strong>Koregaon Park:</strong> Lane No. 5, Pune – 411001</p>
+  <p><strong>Kharadi:</strong> Global High Street, EON Free Zone – 411014</p>
+  <p>Open Daily: 11:00 AM – 01:00 AM</p>
 </section>
 
-<!-- Contact -->
-<section id="contact">
-  <h2>Contact & Locations</h2>
-  <p><strong>Koregaon Park:</strong> Lane No.5, Opposite Oxford Properties, Pune 411001</p>
-  <p><strong>Phone:</strong> +91 98230 64050</p>
-  <p><strong>Kharadi:</strong> Global High Street, EON Free Zone, Pune 411014</p>
-  <p><strong>Phone:</strong> +91 91588 84188</p>
-  <p>Email: marketingmanager@malakaspice.com</p>
-  <p>Open Daily: 11:00 am–01:00 am</p>
+<section id="contact" class="section dark">
+  <h2>Contact</h2>
+  <p>📞 Koregaon Park: +91 98230 64050</p>
+  <p>📞 Kharadi: +91 91588 84188</p>
+  <p>✉ marketingmanager@malakaspice.com</p>
 </section>
-
-</main>
 
 <footer>
-  <p>© 2025 Malaka Spice — Inspired Southeast Asian Cuisine</p>
+  <p>© 2025 Malaka Spice • Pune</p>
 </footer>
 
 <script src="script.js"></script>
